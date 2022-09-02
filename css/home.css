@@ -113,7 +113,7 @@ overflow: hidden;
 }
 
 .qsearch-btn:hover ,.qsearch-btn:focus{
-    background-color:#e4177c ;
+    background-color:#e4177c !important;
     outline: none;
 }
 /* quick search */
