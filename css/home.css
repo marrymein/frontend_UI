@@ -100,6 +100,9 @@ overflow: hidden;
     height: 5rem !important;
 }
 /* quick search */
+.age{
+    height: 2.8rem;
+}
 .qsearch:focus,.age:focus{
     border: 2.5px #e4177c solid !important;
     outline: none;
