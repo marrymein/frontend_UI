@@ -1,0 +1,42 @@
+.text-blue{
+    color: #00A3FF;
+}
+.text-pink{
+    color: #e4177c;
+}.text-light-pink{
+    color: #ffb5d9;
+}.text-black{
+    color: #505050;
+}
+/* --------- */
+.border-pink{
+    border-color: #e4177c !important;
+}
+.border-light-pink{
+    border-color: #ffb5d9 !important;
+}
+.border-blue{
+    border-color: #00A3FF !important;
+}
+.border-black{
+    border-color: #505050 !important;
+}
+/* --------- */
+.bg-blue{
+    background-color: #00A3FF;
+}
+.bg-pink{
+    background-color: #e4177c;
+}.bg-light-pink{
+    background-color: #ffb5d9;
+}.bg-black{
+    background-color: #505050;
+}
+/* --------- */
+h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 0 !important;
+}
+.display-font{
+    font-family: 'Felix Titling', sans-serif !important;
+}

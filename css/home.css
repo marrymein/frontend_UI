@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/* header */
+.header{
+    width: 100vmax;
+    height: 100vh;
+    z-index: 9 !important;
+    position: relative;
+    overflow-x: hidden;
+}
+.header-img{
+background-image: linear-gradient( #e4177d69, rgba(0, 0, 0, 0.34) ), url(../asserts/pexels-ankur-kumar-3872614.jpg);
+background-position: center center;
+background-size: cover;
+max-width: 100%;
+}
+
+/* header */
+/* register */
+.register-div{
+position: relative;
+/* height: 10rem; */
+z-index: 10 !important;
+margin-top: -5rem;
+}
+.register-div input:focus{
+    border: 2.5px #e4177c solid ;
+    /* border-color: #e4177c; */
+    box-shadow: none;
+
+}
+.register-div select:focus{
+    border: 2.5px #e4177c solid ;
+    /* border-color: #e4177c; */
+    box-shadow: none;
+}
+/* register */
+/* features */
+.features img{
+    height: 4rem !important;
+}
+
+/* features */
+/* instruction */
+.instruction img{
+    height: 4rem;
+    background-color:white;
+    margin-top: -3rem;
+}
+/* instruction */
+/* story */
+.story{
+background: linear-gradient( rgba(255, 255, 255, 0.923), rgba(255, 255, 255, 0.923) ), url('../asserts/Untitled-1.png');
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+max-width: 100%;
+}
+
+.story-img{
+/* background-color: aqua; */
+width: 25rem;
+height: 33rem;
+margin-top: 3rem;
+margin-bottom: 3rem;
+overflow: hidden; 
+}
+.story-img img{
+    background-position: center center;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    max-height: 100%;
+    margin-left: -13rem;
+}
+/* story */
+/* activement */
+.activement img{
+    height: 5rem !important;
+}
+/* quick search */
+.qsearch:focus,.age:focus{
+    border: 2.5px #e4177c solid !important;
+    outline: none;
+}
+.age::-webkit-inner-spin-button{ 
+  -webkit-appearance: none !important; 
+  margin: 0 !important; 
+}
+
+.qsearch-btn:hover ,.qsearch-btn:focus{
+    background-color:#e4177c ;
+    outline: none;
+}
+/* quick search */
+/* bg-city */
+.bg-city img{
+    max-width: 100%;
+}

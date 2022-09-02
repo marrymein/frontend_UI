@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link href="http://fonts.cdnfonts.com/css/felix-titling" rel="stylesheet" />
+    <!-- -- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header sec -->
+    <div class="row header">
+      <div
+        class="col-7 container-fluid"
+        style="
+          background: linear-gradient(
+            199.29deg,
+            #7ed0ff -8.84%,
+            #e4177c 142.72%
+          );
+        "
+      >
+        <!-- nav -->
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+              <img src="./asserts/logo.png" alt="" style="height: 5.8rem" />
+            </a>
+            <div class="d-flex">
+              <a class="nav-link fw-bold fs-5 me-3 text-pink" href="">Login</a>
+              <a class="nav-link fw-bold fs-5" href="">Help</a>
+            </div>
+          </div>
+        </nav>
+        <!-- nav -->
+        <div class="col-10 d-flex mx-auto h-75 align-items-center">
+          <h1 class="display-font display-3 text-white">
+            Finding your perfect match with trusted matrimony
+          </h1>
+        </div>
+      </div>
+      <div class="col-5 header-img px-0"></div>
+    </div>
+    <!-- header sec -->
+    <!-- register -->
+    <div class="register-div shadow-lg col-8 mx-auto bg-light rounded-4">
+      <div class="row">
+        <div class="col-10">
+          <div class="row g-3 px-4 py-4">
+            <div class="col-4">
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                >
+                  <option selected disabled>Select Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+                <label for="floatingSelect">Gender</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  
+                  placeholder="Name"
+                />
+                <label for="floatingInput">Name</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating">
+                <input
+                  type="tel"
+                  class="form-control"
+                
+                  placeholder="Phone"
+                  maxlength="10"
+                />
+                <label for="floatingInput">Phone Number</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                
+                  placeholder="Email"
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                
+                  placeholder="Password"
+                />
+                <label for="floatingInput">Password</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-2 bg-blue"
+          style="
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+          "
+        >
+          <button
+            class="w-100 fs-3 h-100 fw-semibold text-white bg-transparent border-0"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- register -->
+    <!-- features -->
+    <div class="container mt-5">
+      <div class="row g-5 justify-content-center">
+        <div
+          class="col-3 px-3 py-3 features border rounded-3 d-flex justify-content-center align-items-center"
+        >
+          <img class="col-4" src="./asserts/icons/verified.svg" alt="" />
+          <p
+            class="col fs-4 fw-semibold ms-3 text-blue"
+            style="margin-bottom: 0"
+          >
+            Verified Profile
+          </p>
+        </div>
+        <div
+          class="col-3 ms-3 px-2 py-2 features border rounded-3 d-flex justify-content-center align-items-center"
+        >
+          <img class="col-4" src="./asserts/icons/gdpr.svg" alt="" />
+          <p
+            class="col fs-4 fw-semibold ms-3 text-blue text-center"
+            style="margin-bottom: 0"
+          >
+            Trusted by 1000+ Users
+          </p>
+        </div>
+        <div
+          class="col-3 ms-3 px-2 py-2 features border rounded-3 d-flex justify-content-center align-items-center"
+        >
+          <img class="col-4" src="./asserts/icons/privacy.svg" alt="" />
+          <p
+            class="col fs-4 fw-semibold ms-3 text-blue"
+            style="margin-bottom: 0"
+          >
+            100% Privacy
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- features -->
+
+    <!-- story -->
+    <div class="story mt-5">
+      <div class="row">
+        <div class="col-8">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center h-100"
+          >
+            <h1 class="display-font display-4">We help at every stage</h1>
+            <p class="fs-5 mt-3 col-7">
+              <span class="fw-semibold text-pink fs-3"> Mee2We </span>- India's
+              No. 1 and Most Trusted Matrimony service, has helped Millions like
+              you find matches from across different communities such as
+              Agarwal, Brahmin, Kalita, Kayastha, Khandayat, Khatri, Lingayath,
+              Maratha, Nair, Parsi, Rajput, Reddy.
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="story-img rounded-5">
+            <img
+              src="./asserts/69645-cute-love-story-plush-affairs-lead.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- story -->
+        <!-- instruction -->
+        <div class="my-5 text-center">
+          <h1 class="fw-semibold fs-2 text-blue">IT’S EASY TO GET STARTED</h1>
+          <p>
+            Just follow 3 easy steps to get connected <br />
+            with thousand of genuine profiles
+          </p>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div
+            class="col-2 border border-3 rounded border-blue instruction text-center"
+          >
+            <img
+              src="./asserts/icons/icons8-add-user-group-woman-man-100.png"
+              alt=""
+            />
+            <p class="fs-5 fw-bolder">Sign Up</p>
+          </div>
+          <div
+            class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
+          >
+            <img src="./asserts/icons/icons8-find-user-male-100.png" alt="" />
+            <p class="fs-5 fw-bolder">Browse Partner</p>
+          </div>
+          <div
+            class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
+          >
+            <img src="./asserts/icons/icons8-team-100.png" alt="" />
+            <p class="fs-5 fw-bolder">Connect</p>
+          </div>
+        </div>
+    
+        <!-- instruction -->
+<!-- activement -->
+<div class=" bg-pink my-5">
+<div class="container">
+    <div class="row py-5">
+        <div class="col-3 text-center activement ">
+            <img src="./asserts/icons/icons8-multicultural-people-100.png" alt="">
+            <div class="counter display-4 fw-bolder text-white" data-target="2000">165</div>
+            <p class="fs-3 text-light-pink">Member</p>
+        </div>
+        <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-engagement-64.png" alt="">
+            <div class="counter display-4 fw-bolder text-white" data-target="1200">426</div>
+            <p class="fs-3 text-light-pink">Engage</p>
+        </div>
+        <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-city-100.png" alt="">
+            <div class="counter display-4 fw-bolder text-white" data-target="190">50</div>
+            <p class="fs-3 text-light-pink">City</p>
+        </div>
+        <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-marriage-60.png" alt="">
+            <div class="counter display-4 fw-bolder text-white" data-target="765">300</div>
+            <p class="fs-3 text-light-pink">Happy Couple</p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- activement -->
+<!-- quick search -->
+<div class="container my-5 pt-5">
+  <div class="row g-3 justify-content-center">
+
+<div class="col-2 text-center">
+  <label for="" class="fs-5 fw-semibold">Looking For</label><br>
+  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
+    <option value="">Male</option>
+    <option value="">Female</option>
+  </select>
+</div>
+
+<div class="col-2 text-center">
+  <label for="" class="fs-5 fw-semibold">Age Between</label>
+  <div class="d-flex mt-2 align-items-center justify-content-center">
+    <input type="number" class="w-25 px-2 py-2 border rounded border-2 border-light-pink age">
+    <p class="px-2 fs-4 fw-bolder">-</p>
+    <input type="number" class="w-25 px-2 py-2 border rounded border-2 border-light-pink age">
+  </div>
+</div>
+
+<div class="col-2 text-center">
+  <label for="" class="fs-5 fw-semibold">Cast</label><br>
+  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
+    <option value="">Hindu</option>
+    <option value="">Marathi</option>
+    <option value="">Gujarati</option>
+    <option value="">Marwadi</option>
+    <option value="">Punjabi</option>
+  </select>
+</div>
+
+<div class="col-2 text-center">
+  <label for="" class="fs-5 fw-semibold">City</label><br>
+  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
+    <option value="">Mumbai</option>
+    <option value="">Pune</option>
+    <option value="">Goa</option>
+    <option value="">UP</option>
+    <option value="">Mp</option>
+  </select>
+</div>
+
+<div class="col-1 d-flex align-items-end pb-1">
+ <button class="btn bg-light-pink text-white w-100 h-50 qsearch-btn">Search</button>
+</div>
+  </div>
+</div>
+<!-- quick search -->
+<!-- bg-city -->
+<div class="bg-city">
+  <img src="./asserts/indialandmark.png" alt="">
+</div>
+<!-- bg-city -->
+<!-- footer -->
+
+
+<!-- footer -->
+  </body>
+  <!-- custom js -->
+<script src="./js/home.js"></script>
+  <!-- jquery -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- ------ -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+</html>
+
