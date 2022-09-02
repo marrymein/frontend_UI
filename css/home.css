@@ -118,3 +118,9 @@ overflow: hidden;
 .bg-city img{
     max-width: 100%;
 }
+/* suscribe */
+.susemail:focus{
+    outline: none;
+    border: 2.5px #e4177c solid !important;
+    box-shadow: none;
+}
