@@ -8,6 +8,16 @@ body{
     overflow-x: hidden;
 }
 /* header */
+.logo{
+    height: 5.5rem;
+}
+.header-bg{
+    background: linear-gradient(
+            199.29deg,
+            #7ed0ff -8.84%,
+            #e4177c 142.72%
+          );
+}
 .header{
     width: 100vmax;
     height: 100vh;
@@ -24,6 +34,10 @@ max-width: 100%;
 
 /* header */
 /* register */
+.register-btn{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 .register-div{
 position: relative;
 /* height: 10rem; */
