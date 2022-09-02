@@ -1,12 +1,12 @@
 .text-blue{
-    color: #00A3FF;
+    color: #00A3FF !important;
 }
 .text-pink{
-    color: #e4177c;
+    color: #e4177c !important;
 }.text-light-pink{
-    color: #ffb5d9;
+    color: #ffb5d9 !important;
 }.text-black{
-    color: #505050;
+    color: #505050 !important;
 }
 /* --------- */
 .border-pink{
@@ -23,14 +23,14 @@
 }
 /* --------- */
 .bg-blue{
-    background-color: #00A3FF;
+    background-color: #00A3FF !important;
 }
 .bg-pink{
-    background-color: #e4177c;
+    background-color: #e4177c !important;
 }.bg-light-pink{
-    background-color: #ffb5d9;
+    background-color: #ffb5d9 !important;
 }.bg-black{
-    background-color: #505050;
+    background-color: #505050 !important;
 }
 /* --------- */
 h1,h2,h3,h4,h5,h6,p,span{

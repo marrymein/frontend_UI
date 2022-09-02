@@ -126,4 +126,33 @@ overflow: hidden;
     outline: none;
     border: 2.5px #e4177c solid !important;
     box-shadow: none;
+    border-right: 0 !important;
 }
+/* footer */
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.links a:hover{
+/* color: #ffb5d9 !important; */
+color: #e4177c !important;
+
+}
+.links{
+    line-height: 2.5rem;
+}
+.follow-btn{
+    font-size: 2rem;
+}
+.follow-btn i:hover{
+    color: #ffb5d9 !important;
+}
+
+
+
+
+
+
+
+
+
