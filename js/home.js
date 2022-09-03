@@ -1,18 +1,40 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+
+
+var $owl = $('.owl-carousel');
+
+$owl.children().each( function( index ) {
+  $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+});
+
+$owl.owlCarousel({
+  center: true,
+  items:3,
+  loop:true,
+  margin:10,
+
+  responsive:{
+    0:{
+        items:1,
+
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    600:{
+        items:3,
+
     },
-  });
+    1000:{
+        items:4,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+    }
+}
+});
+
+$(document).on('click', '.owl-item>div', function() {
+  // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+  var $speed = 300;  // in ms
+  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+});
 
 
 const counters = document.querySelectorAll('.counter');
