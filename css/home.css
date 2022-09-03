@@ -3,8 +3,28 @@
     padding: 0;
     
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #e4177c #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e4177c;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+  }
 body{
-    width: 100%;
     overflow-x: hidden;
 }
 /* header */
@@ -19,19 +39,14 @@ body{
           );
 }
 .header{
-    width: 100vmax;
     height: 100vh;
-    z-index: 9 !important;
-    position: relative;
-    overflow-x: hidden;
 }
 .header-img{
-background-image: linear-gradient( #e4177d69, rgba(0, 0, 0, 0.34) ), url(../asserts/pexels-ankur-kumar-3872614.jpg);
-background-position: center center;
-background-size: cover;
-max-width: 100%;
+    background-image: linear-gradient( #e4177d69, rgba(0, 0, 0, 0.34) ), url(../asserts/pexels-ankur-kumar-3872614.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 /* header */
 /* register */
 .register-btn{
@@ -95,6 +110,23 @@ overflow: hidden;
     margin-left: -13rem;
 }
 /* story */
+/* testimonal */
+.swiper {
+    width: 80% ;
+    height: 100%;
+  }
+.swiper-slide{
+    height: 23rem;
+    width: 19rem !important;
+    margin-left: 2rem !important;
+}
+.testm-message{
+    font-size: 1rem !important;
+}
+
+
+/* testimonal */
+
 /* activement */
 .activement img{
     height: 5rem !important;

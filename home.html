@@ -15,8 +15,18 @@
       rel="stylesheet"
     />
     <!-- jquery -->
+    <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -31,31 +41,31 @@
   </head>
   <body>
     <!-- header sec -->
-    <div class="row header">
-      <div
-        class="col-7 container-fluid header-bg"
-      >
-        <!-- nav -->
-        <nav class="navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand">
-              <img src="./asserts/logo.png" alt="" class="logo"/>
-            </a>
-            <div class="d-flex">
-              <a class="nav-link fw-bold fs-5 me-3 text-pink" href="">Login</a>
-              <a class="nav-link fw-bold fs-5" href="">Help</a>
-            </div>
+<header class="w-100" >
+  <div class="row header">
+    <div class="col-7 bg-blue header-bg">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="./asserts/logo.png" alt="" class="logo" />
+          </a>
+          <div class="d-flex">
+            <a class="nav-link fw-bold fs-5 me-3 text-pink" href="">Login</a>
+            <a class="nav-link fw-bold fs-5" href="">Help</a>
           </div>
-        </nav>
-        <!-- nav -->
-        <div class="col-10 d-flex mx-auto h-75 align-items-center">
-          <h1 class="display-font display-3 text-white">
-            Finding your perfect match with trusted matrimony
-          </h1>
+          
         </div>
+      </nav>
+      <div class="col-10 d-flex mx-auto h-75 align-items-center">
+        <h1 class="display-font display-3 text-white">
+          Finding your perfect match with trusted matrimony
+        </h1>
       </div>
-      <div class="col-5 header-img px-0"></div>
     </div>
+    <div class="col-5 bg-danger header-img">
+    </div>
+  </div>
+</header>
     <!-- header sec -->
     <!-- register -->
     <div class="register-div shadow-lg col-8 mx-auto bg-light rounded-4">
@@ -78,12 +88,7 @@
             </div>
             <div class="col-4">
               <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  
-                  placeholder="Name"
-                />
+                <input type="text" class="form-control" placeholder="Name" />
                 <label for="floatingInput">Name</label>
               </div>
             </div>
@@ -92,7 +97,6 @@
                 <input
                   type="tel"
                   class="form-control"
-                
                   placeholder="Phone"
                   maxlength="10"
                 />
@@ -101,12 +105,7 @@
             </div>
             <div class="col-6">
               <div class="form-floating">
-                <input
-                  type="email"
-                  class="form-control"
-                
-                  placeholder="Email"
-                />
+                <input type="email" class="form-control" placeholder="Email" />
                 <label for="floatingInput">Email</label>
               </div>
             </div>
@@ -115,7 +114,6 @@
                 <input
                   type="password"
                   class="form-control"
-                
                   placeholder="Password"
                 />
                 <label for="floatingInput">Password</label>
@@ -123,9 +121,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="col-2 bg-blue register-btn"
-        >
+        <div class="col-2 bg-blue register-btn">
           <button
             class="w-100 fs-3 h-100 fw-semibold text-white bg-transparent border-0"
           >
@@ -142,21 +138,13 @@
           class="col-3 px-3 py-3 features border rounded-3 d-flex justify-content-center align-items-center"
         >
           <img class="col-4" src="./asserts/icons/verified.svg" alt="" />
-          <p
-            class="col fs-4 fw-semibold ms-3 text-blue"
-           
-          >
-            Verified Profile
-          </p>
+          <p class="col fs-4 fw-semibold ms-3 text-blue">Verified Profile</p>
         </div>
         <div
           class="col-3 ms-3 px-2 py-2 features border rounded-3 d-flex justify-content-center align-items-center"
         >
           <img class="col-4" src="./asserts/icons/gdpr.svg" alt="" />
-          <p
-            class="col fs-4 fw-semibold ms-3 text-blue text-center"
-            
-          >
+          <p class="col fs-4 fw-semibold ms-3 text-blue text-center">
             Trusted by 1000+ Users
           </p>
         </div>
@@ -164,12 +152,7 @@
           class="col-3 ms-3 px-2 py-2 features border rounded-3 d-flex justify-content-center align-items-center"
         >
           <img class="col-4" src="./asserts/icons/privacy.svg" alt="" />
-          <p
-            class="col fs-4 fw-semibold ms-3 text-blue"
-           
-          >
-            100% Privacy
-          </p>
+          <p class="col fs-4 fw-semibold ms-3 text-blue">100% Privacy</p>
         </div>
       </div>
     </div>
@@ -203,215 +186,370 @@
       </div>
     </div>
     <!-- story -->
-        <!-- instruction -->
-        <div class="my-5 text-center">
-          <h1 class="fw-semibold fs-2 text-blue">IT’S EASY TO GET STARTED</h1>
-          <p>
-            Just follow 3 easy steps to get connected <br />
-            with thousand of genuine profiles
-          </p>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div
-            class="col-2 border border-3 rounded border-blue instruction text-center"
-          >
+    <!-- instruction -->
+    <div class="my-5 text-center">
+      <h1 class="fw-semibold fs-2 text-blue">IT’S EASY TO GET STARTED</h1>
+      <p>
+        Just follow 3 easy steps to get connected <br />
+        with thousand of genuine profiles
+      </p>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div
+        class="col-2 border border-3 rounded border-blue instruction text-center"
+      >
+        <img
+          src="./asserts/icons/icons8-add-user-group-woman-man-100.png"
+          alt=""
+        />
+        <p class="fs-5 fw-bolder">Sign Up</p>
+      </div>
+      <div
+        class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
+      >
+        <img src="./asserts/icons/icons8-find-user-male-100.png" alt="" />
+        <p class="fs-5 fw-bolder">Browse Partner</p>
+      </div>
+      <div
+        class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
+      >
+        <img src="./asserts/icons/icons8-team-100.png" alt="" />
+        <p class="fs-5 fw-bolder">Connect</p>
+      </div>
+    </div>
+
+    <!-- instruction -->
+    <!-- activement -->
+    <div class="bg-pink my-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-3 text-center activement">
             <img
-              src="./asserts/icons/icons8-add-user-group-woman-man-100.png"
+              src="./asserts/icons/icons8-multicultural-people-100.png"
               alt=""
             />
-            <p class="fs-5 fw-bolder">Sign Up</p>
-          </div>
-          <div
-            class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
-          >
-            <img src="./asserts/icons/icons8-find-user-male-100.png" alt="" />
-            <p class="fs-5 fw-bolder">Browse Partner</p>
-          </div>
-          <div
-            class="col-2 ms-3 border border-3 rounded border-blue instruction text-center"
-          >
-            <img src="./asserts/icons/icons8-team-100.png" alt="" />
-            <p class="fs-5 fw-bolder">Connect</p>
-          </div>
-        </div>
-    
-        <!-- instruction -->
-<!-- activement -->
-<div class=" bg-pink my-5">
-<div class="container">
-    <div class="row py-5">
-        <div class="col-3 text-center activement ">
-            <img src="./asserts/icons/icons8-multicultural-people-100.png" alt="">
-            <div class="counter display-4 fw-bolder text-white" data-target="2000">165</div>
+            <div
+              class="counter display-4 fw-bolder text-white"
+              data-target="2000"
+            >
+              165
+            </div>
             <p class="fs-3 text-light-pink">Member</p>
-        </div>
-        <div class="col-3 text-center activement">
-            <img src="./asserts/icons/icons8-engagement-64.png" alt="">
-            <div class="counter display-4 fw-bolder text-white" data-target="1200">426</div>
-            <p class="fs-3 text-light-pink">Engage</p>
-        </div>
-        <div class="col-3 text-center activement">
-            <img src="./asserts/icons/icons8-city-100.png" alt="">
-            <div class="counter display-4 fw-bolder text-white" data-target="190">50</div>
-            <p class="fs-3 text-light-pink">City</p>
-        </div>
-        <div class="col-3 text-center activement">
-            <img src="./asserts/icons/icons8-marriage-60.png" alt="">
-            <div class="counter display-4 fw-bolder text-white" data-target="765">300</div>
-            <p class="fs-3 text-light-pink">Happy Couple</p>
-        </div>
-    </div>
-</div>
-</div>
-<!-- activement -->
-<!-- quick search -->
-<div class="container my-5 pt-5">
-  <div class="row g-3 justify-content-center">
-
-<div class="col-2 text-center">
-  <label for="" class="fs-5 fw-semibold">Looking For</label><br>
-  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
-    <option value="">Male</option>
-    <option value="">Female</option>
-  </select>
-</div>
-
-<div class="col-2 text-center">
-  <label for="" class="fs-5 fw-semibold">Age Between</label>
-  <div class="d-flex mt-2 align-items-center justify-content-center">
-    <input type="number" class="w-25 px-2 py-2 border rounded border-2 border-light-pink age">
-    <p class="px-2 fs-4 fw-bolder">-</p>
-    <input type="number" class="w-25 px-2 py-2 border rounded border-2 border-light-pink age">
-  </div>
-</div>
-
-<div class="col-2 text-center">
-  <label for="" class="fs-5 fw-semibold">Cast</label><br>
-  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
-    <option value="">Hindu</option>
-    <option value="">Marathi</option>
-    <option value="">Gujarati</option>
-    <option value="">Marwadi</option>
-    <option value="">Punjabi</option>
-  </select>
-</div>
-
-<div class="col-2 text-center">
-  <label for="" class="fs-5 fw-semibold">City</label><br>
-  <select name="" id="" class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch" >
-    <option value="">Mumbai</option>
-    <option value="">Pune</option>
-    <option value="">Goa</option>
-    <option value="">UP</option>
-    <option value="">Mp</option>
-  </select>
-</div>
-
-<div class="col-1 d-flex align-items-end pb-1">
- <button class="btn bg-light-pink text-white w-100 h-50 qsearch-btn">Search</button>
-</div>
-  </div>
-</div>
-<!-- quick search -->
-<!-- bg-city -->
-<div class="bg-city">
-  <img src="./asserts/indialandmark.png" alt="">
-</div>
-<!-- bg-city -->
-<!-- suscribe -->
-<div class="bg-light-pink">
-<div class="container-fluid">
-  <div class="d-flex justify-content-between align-items-center px-2 py-3">
-    
-    <div><p class="fs-3 fw-bold text-black">Suscribe to Our Weekly Newsletter</p></div>
-
-    <div class="col-3">
-      <div class="input-group">
-        <input type="email" class="form-control susemail border-end-0" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary susbtn bg-black" type="button" id="button-addon2"><i class="bi bi-send-fill"></i></button>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-<!-- footer -->
-<div class="bg-dark">
-  <div class="container-fluid">
-    <img src="./asserts/logo.png" alt="" class="logo">
-    <div class="row px-5 justify-content-center mt-3 mb-5">
-      <div class="col-1 border-end border-2 border-blue links">
-        <a class="text-white " href="">Home</a><br>
-        <a class="text-white " href="">About</a><br>
-        <a class="text-white " href="">Contact</a><br>
-        <a class="text-white " href="">Privacy Policy</a>
-      </div>
-
-      <div class="col-4 px-5 border-end border-2 border-blue">
-        <h4 class="text-secondary">Regional Matrimony
-          Services</h4>
-          <div class="d-flex justify-content-between mt-3" >
-            <div class="col-5 links">
-              <a class="text-white " href="">Hindi Matrimony</a><br>
-              <a class="text-white " href="">Marathi Matrimony</a><br>
-              <a class="text-white " href="">Gujarati Matrimony</a><br>
-              <a class="text-white " href="">Kerala Matrimony</a>
-              <a class="text-white " href="">Kannada Matrimony</a><br>
-        <a class="text-white " href="">Marwadi Matrimony</a><br>
-        <a class="text-white " href="">Oriya Matrimony</a><br>
-
-            </div>
-            <div class="col-5 links">
-              <a class="text-white " href="">Parsi Matrimony</a><br>
-              <a class="text-white " href="">Punjabi Matrimony</a><br>
-              <a class="text-white " href="">Rajasthani Matrimony</a><br>
-              <a class="text-white " href="">Sindhi Matrimony</a>
-              <a class="text-white " href="">tamli Matrimony</a><br>
-        <a class="text-white " href="">tamli Matrimony</a><br>
-        <a class="text-white " href="">Bihari Matrimony  </a><br>
-            </div>
-
           </div>
-      </div>
-
-      <div class="col-3 px-5 border-end border-2 border-blue">
-        <h4 class="text-secondary">Help & Support</h4>
-        <div class="my-3 links">
-          <a class="text-white" href="">24x7 Live Help</a><br>
-          <a class="text-white" href="">Contact Us</a><br>
-          <a class="text-white" href="">FQAs</a>
+          <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-engagement-64.png" alt="" />
+            <div
+              class="counter display-4 fw-bolder text-white"
+              data-target="1200"
+            >
+              426
+            </div>
+            <p class="fs-3 text-light-pink">Engage</p>
+          </div>
+          <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-city-100.png" alt="" />
+            <div
+              class="counter display-4 fw-bolder text-white"
+              data-target="190"
+            >
+              50
+            </div>
+            <p class="fs-3 text-light-pink">City</p>
+          </div>
+          <div class="col-3 text-center activement">
+            <img src="./asserts/icons/icons8-marriage-60.png" alt="" />
+            <div
+              class="counter display-4 fw-bolder text-white"
+              data-target="765"
+            >
+              300
+            </div>
+            <p class="fs-3 text-light-pink">Happy Couple</p>
+          </div>
         </div>
-        <h4 class="text-secondary">Follow Us</h4>
-        <div class="d-flex col-8 justify-content-between mt-3">
-<a class="follow-btn" href=""><i class="bi bi-facebook text-secondary"></i></a>
-<a class="follow-btn" href=""><i class="bi bi-instagram text-secondary"></i></a>
-<a class="follow-btn" href=""><i class="bi bi-twitter text-secondary"></i></a>
-        </div>
       </div>
-
-      <div class="col-3 px-5">
-        <h4 class="text-secondary">Information</h4>
-        <div class="mt-3 links">
-          <a href="">About Us</a><br>
-          <a href="">Milestone</a><br>
-          <a href="">Registration Free</a><br>
-          <a href="">Partner Search</a><br>
-          <a href="">Terms & Condition</a><br>
-
-        </div>
-      </div>
-
     </div>
-  </div>
-  <div class="border-top border-2">
-    <p class="text-center py-2 text-secondary">Copyright © 2022, All Right Reserved Mee2We</p>
-  </div>
-</div>
+    <!-- activement -->
+    <!-- <div class="bg-blue mx-auto rounded" style="height: 23rem;width: 19rem;">
+      <div class="bg-danger rounded-top" style="height: 50%;width: 100%;">
+        <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/photo-pretty-lady-handsome-guy-couple-love-making-fingers-hands-heart-figure-celebrate-anniversary-valentine-day-lovers-wear-179991896.jpg" alt="">
+      </div> 
+      <div class="d-flex justify-content-center">
+      <p class="bg-light text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+    </div>
+    <div class=" mt-3 text-center px-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+    </div>
+    </div> -->
+    <!-- testimonal -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-<!-- footer -->
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/photo-pretty-lady-handsome-guy-couple-love-making-fingers-hands-heart-figure-celebrate-anniversary-valentine-day-lovers-wear-179991896.jpg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/360_F_277685185_UAYxm224UPelni1rxsuAUZQbfhly0RpL.jpg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/69645-cute-love-story-plush-affairs-lead.jpeg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/pexels-ankur-kumar-3872614.jpg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/360_F_277685185_UAYxm224UPelni1rxsuAUZQbfhly0RpL.jpg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide mx-auto rounded border-bottom border-3">
+          <div class=" rounded-top" style="height: 50%;width: 100%;">
+            <img class="rounded-top" style="width: 100%; max-height: 100%; object-fit: cover;" src="./asserts/69645-cute-love-story-plush-affairs-lead.jpeg" alt="">
+          </div> 
+          <div class="d-flex justify-content-center">
+          <p class="bg-blue text-white text-center px-4 py-2 rounded-pill" style="margin-top: -1.2rem;">Admin & Admin</p>
+        </div>
+        <div class=" mt-3 text-center px-2 ">
+          <p class="testm-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae doloribus, eius, deserunt expedita odio tenetur quisquam ab libero blanditiis</p>
+        </div>
+        </div>
+
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- testimonal -->
+    <!-- quick search -->
+    <div class="container my-5 pt-5">
+      <div class="row g-3 justify-content-center">
+        <div class="col-2 text-center">
+          <label for="" class="fs-5 fw-semibold">Looking For</label><br />
+          <select
+            name=""
+            id=""
+            class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch"
+          >
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+        </div>
+
+        <div class="col-2 text-center">
+          <label for="" class="fs-5 fw-semibold">Age Between</label>
+          <div class="d-flex mt-2 align-items-center justify-content-center">
+            <input
+              type="number"
+              class="w-25 px-2 py-2 border rounded border-2 border-light-pink age"
+            />
+            <p class="px-2 fs-4 fw-bolder">-</p>
+            <input
+              type="number"
+              class="w-25 px-2 py-2 border rounded border-2 border-light-pink age"
+            />
+          </div>
+        </div>
+
+        <div class="col-2 text-center">
+          <label for="" class="fs-5 fw-semibold">Cast</label><br />
+          <select
+            name=""
+            id=""
+            class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch"
+          >
+            <option value="">Hindu</option>
+            <option value="">Marathi</option>
+            <option value="">Gujarati</option>
+            <option value="">Marwadi</option>
+            <option value="">Punjabi</option>
+          </select>
+        </div>
+
+        <div class="col-2 text-center">
+          <label for="" class="fs-5 fw-semibold">City</label><br />
+          <select
+            name=""
+            id=""
+            class="mt-2 w-100 px-2 py-2 border rounded border-2 border-light-pink qsearch"
+          >
+            <option value="">Mumbai</option>
+            <option value="">Pune</option>
+            <option value="">Goa</option>
+            <option value="">UP</option>
+            <option value="">Mp</option>
+          </select>
+        </div>
+
+        <div class="col-1 d-flex align-items-end pb-1">
+          <button class="btn bg-light-pink text-white w-100 h-50 qsearch-btn">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- quick search -->
+    <!-- bg-city -->
+    <div class="bg-city">
+      <img src="./asserts/indialandmark.png" alt="" />
+    </div>
+    <!-- bg-city -->
+    <!-- suscribe -->
+    <div class="bg-light-pink">
+      <div class="container-fluid">
+        <div
+          class="d-flex justify-content-between align-items-center px-2 py-3"
+        >
+          <div>
+            <p class="fs-3 fw-bold text-black">
+              Suscribe to Our Weekly Newsletter
+            </p>
+          </div>
+
+          <div class="col-3">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control susemail border-end-0"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary susbtn bg-black"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="bg-dark">
+      <div class="container-fluid">
+        <img src="./asserts/logo.png" alt="" class="logo" />
+        <div class="row px-5 justify-content-center mt-3 mb-5">
+          <div class="col-1 border-end border-2 border-blue links">
+            <a class="text-white" href="">Home</a><br />
+            <a class="text-white" href="">About</a><br />
+            <a class="text-white" href="">Contact</a><br />
+            <a class="text-white" href="">Privacy Policy</a>
+          </div>
+
+          <div class="col-4 px-5 border-end border-2 border-blue">
+            <h4 class="text-secondary">Regional Matrimony Services</h4>
+            <div class="d-flex justify-content-between mt-3">
+              <div class="col-5 links">
+                <a class="text-white" href="">Hindi Matrimony</a><br />
+                <a class="text-white" href="">Marathi Matrimony</a><br />
+                <a class="text-white" href="">Gujarati Matrimony</a><br />
+                <a class="text-white" href="">Kerala Matrimony</a>
+                <a class="text-white" href="">Kannada Matrimony</a><br />
+                <a class="text-white" href="">Marwadi Matrimony</a><br />
+                <a class="text-white" href="">Oriya Matrimony</a><br />
+              </div>
+              <div class="col-5 links">
+                <a class="text-white" href="">Parsi Matrimony</a><br />
+                <a class="text-white" href="">Punjabi Matrimony</a><br />
+                <a class="text-white" href="">Rajasthani Matrimony</a><br />
+                <a class="text-white" href="">Sindhi Matrimony</a>
+                <a class="text-white" href="">tamli Matrimony</a><br />
+                <a class="text-white" href="">tamli Matrimony</a><br />
+                <a class="text-white" href="">Bihari Matrimony </a><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 px-5 border-end border-2 border-blue">
+            <h4 class="text-secondary">Help & Support</h4>
+            <div class="my-3 links">
+              <a class="text-white" href="">24x7 Live Help</a><br />
+              <a class="text-white" href="">Contact Us</a><br />
+              <a class="text-white" href="">FQAs</a>
+            </div>
+            <h4 class="text-secondary">Follow Us</h4>
+            <div class="d-flex col-8 justify-content-between mt-3">
+              <a class="follow-btn" href=""
+                ><i class="bi bi-facebook text-secondary"></i
+              ></a>
+              <a class="follow-btn" href=""
+                ><i class="bi bi-instagram text-secondary"></i
+              ></a>
+              <a class="follow-btn" href=""
+                ><i class="bi bi-twitter text-secondary"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-3 px-5">
+            <h4 class="text-secondary">Information</h4>
+            <div class="mt-3 links">
+              <a href="">About Us</a><br />
+              <a href="">Milestone</a><br />
+              <a href="">Registration Free</a><br />
+              <a href="">Partner Search</a><br />
+              <a href="">Terms & Condition</a><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-2">
+        <p class="text-center py-2 text-secondary">
+          Copyright © 2022, All Right Reserved Mee2We
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
   </body>
   <!-- custom js -->
-<script src="./js/home.js"></script>
+  <script src="./js/home.js"></script>
   <!-- jquery -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   <!-- ------ -->
@@ -420,6 +558,5 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"
   ></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <!-- swiper js -->
 </html>
-
