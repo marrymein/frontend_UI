@@ -246,7 +246,6 @@ color: #e4177c !important;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
     .register-btn{
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
