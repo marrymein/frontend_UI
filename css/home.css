@@ -17,7 +17,7 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #000000;
+    background: #ffffff;
   }
 
   *::-webkit-scrollbar-thumb {
@@ -48,14 +48,12 @@
 }
 /* header */
 /* register */
-.register-btn{
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
+
 .register-div{
 position: relative;
 z-index: 10 !important;
 margin-top: -5rem;
+/* width: auto; */
 }
 .register-div input:focus{
     border: 2.5px #e4177c solid ;
@@ -76,6 +74,9 @@ margin-top: -5rem;
 
 /* features */
 /* instruction */
+/* .instruction{
+    height: 5rem;
+} */
 .instruction img{
     height: 4rem;
     background-color:white;
@@ -114,6 +115,7 @@ overflow: hidden;
     height: 23rem;
     width: 19rem !important;
     margin-left: 2rem !important;
+    display: inline-block;
 }
 .testm-message{
     font-size: 1rem !important;
@@ -147,6 +149,7 @@ overflow: hidden;
     cursor: pointer;
     top: 100px !important;
 }
+
 
 /* testimonal */
 
@@ -203,6 +206,91 @@ color: #e4177c !important;
     color: #ffb5d9 !important;
 }
 
+
+/* ============================================= */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        height: 4rem;
+    }
+.header-bg{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.34),#e4177d9a ), url(../asserts/pexels-ankur-kumar-3872614.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    height:75vh ;
+}
+.header-text{
+    font-size: 1.8rem;
+    padding-top: 6rem;
+}
+/* ---------------------------- */
+.register-btn{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* -------------------------------- */
+.features img{
+    height: 3rem !important;
+}
+.owl-carousel .owl-item {
+    text-align:center;
+}
+.owl-carousel .item {
+    float: none;
+    display: inline-block;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    .register-btn{
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    /* ----------------- */
+    .features img{
+        height: 3rem !important;
+    }
+    .features p{
+        font-size: 1rem !important;
+    }
+    /* --------------- */
+    .story-img img{
+        margin-left: -18rem !important;
+    }
+    .age{
+        width: 4.5rem !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .register-btn{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+     .right-border{
+        border-right: 3px #7ed0ff solid;
+    }
+    .story-img img{
+        margin-left: -13rem !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+   
+}
 
 
 
