@@ -279,6 +279,7 @@ color: #e4177c !important;
     .register-btn{
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
     }
      .right-border{
         border-right: 3px #7ed0ff solid;
