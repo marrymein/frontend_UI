@@ -52,7 +52,7 @@ input[type=number]::-webkit-outer-spin-button {
   /* --------- */
 
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 400px) {
     .register{
         margin-top: 3.5rem;
 }
