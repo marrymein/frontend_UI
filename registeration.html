@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link href="http://fonts.cdnfonts.com/css/felix-titling" rel="stylesheet" />
+    <!-- -- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/registration.css" />
+    <title>Login</title>
+  </head>
+  <body>
+   <div class="">
+      <img class="bg-img" src="./asserts/Untitled-1.png" alt="" />
+    </div>
+
+
+    <div class="col-8 bg-white d-flex main-card shadow mx-auto mt-5 rounded-5">
+      <div class="col-4 nav-card rounded-5 px-4 ">
+        <div class="w-100 text-center ">
+          <a href="home.html">
+            <img class="logo mt-3" src="./asserts/logo.png" alt="" />
+          </a>
+        </div>
+        <p class="text-white text-center fs-6">
+          Find 1000+ Verfied profile on mee2we. find your perfect match here
+        </p>
+        <div class="my-5">
+          <button id="basic" class="nav-links bg-transparent border-0 active">Basic</button><br />
+          <button id="personal" class="nav-links bg-transparent border-0">personal</button><br />
+          <button id="residential" class="nav-links bg-transparent border-0">Residential</button><br />
+          <button id="family-bg" class="nav-links bg-transparent border-0">Family Background</button><br />
+
+
+          
+        </div>
+        <div
+          class="social-icons col-12 mx-auto"
+        >
+        <a href="Login.html" class="my-2 text-decoration-none ">Already have an Account</a>
+        <div class="col-6 d-flex justify-content-between align-items-center mt-3">
+          <a class="fs-3" href=""><i class="bi bi-facebook"></i></a>
+          <a class="fs-3" href=""><i class="bi bi-instagram"></i></a>
+          <a class="fs-3" href=""><i class="bi bi-twitter"></i></a>
+        </div></div>
+      </div>
+
+      <div  class="col-8 form-card p-5 register-form">
+        <h3 class="fw-bold">
+          Hello please tell us little bit<br />
+          about yourself
+        </h3>
+        <!-- form 1 -->
+        <div id="form-1"> 
+        <div class=" row align-items-end g-3 mt-3">
+
+
+          <div class="col-12 input-effect">
+            <label class="label">Name</label>
+            <input type="text" class="form-control border-0 border-bottom border-2 rounded-0 custom-inp">
+          </div>
+
+          <div class="col-4">
+            <label class="label">Gender</label><br />
+            <div class="d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  checked
+                />
+                <label class="form-check-label" for="male">
+                  Male
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="femail"
+                  checked
+                />
+                <label class="form-check-label" for="female">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
+
+<div class=" col-8">
+  <label class="label">Phone Number</label>
+          <div class="d-flex w-100">
+            <div class="col-3">
+            <select class=" form-select rounded-0 rounded-start" aria-label="Default select example">
+              <option selected>+91</option>
+              <option value="1">+80</option>
+              <option value="2">+64</option>
+              <option value="3">+95</option>
+            </select>
+          </div>
+          <div class="col">
+            <input type="tel" class="w-100 form-control rounded-0 rounded-end">
+          </div></div>
+        </div>
+
+        <div class="col-12 input-effect">
+          <label class="label">Email</label>
+          <input type="Email" class="form-control border-0 border-bottom border-2 rounded-0 custom-inp">
+        </div>
+
+        <div class="col-12 input-effect">
+          <label class="label">Password</label>
+          <input type="password" class="form-control border-0 border-bottom border-2 rounded-0 custom-inp">
+        </div>
+
+        <div class="col-12 nav-btn">
+          <button id="n-form2" class="btn bg-blue text-white">Next</button>
+        </div>
+
+        </div>
+      </div>
+        <!-- form 1 -->
+        <!-- form 2  -->
+        <div id="form-2"> 
+        <div  class="row align-items-end g-3 mt-3">
+          <div class="col-4">
+            <label class="label" for="dob">Date of birth</label><br />
+            <input
+              type="date"
+              id="dob"
+              class="px-2 rounded form-control"
+              placeholder="DOB"
+            />
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Mother Tongue</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Religion</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Cast</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label class="label">Is Cast Applicable</label><br />
+            <div class="d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="castapplicable"
+                  id="castapplicable-yes"
+                  value="yes"
+                  checked
+                />
+                <label class="form-check-label" for="castapplicable-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="castapplicable"
+                  id="castapplicable-no"
+                  value="no"
+                  checked
+                />
+                <label class="form-check-label" for="castapplicable-no">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <input type="text" class="form-control" name="surname" id="exampleFormControlInput1" placeholder="Subcast Surname">
+          </div>
+          <div class="col-3">
+            <label class="label">Manglik</label><br />
+            <div class="d-flex ">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Manglik"
+                  id="Manglik-yes"
+                  value="yes"
+                  checked
+                />
+                <label class="form-check-label" for="Manglik-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Manglik"
+                  id="Manglik-no"
+                  value="no"
+                  checked
+                />
+                <label class="form-check-label" for="Manglik-no">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <label class="label">Horoscope is necessary</label><br />
+            <div class="d-flex ">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Horoscope"
+                  id="Horoscope-yes"
+                  value="yes"
+                  checked
+                />
+                <label class="form-check-label" for="Horoscope-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Horoscope"
+                  id="Horoscope-no"
+                  value="no"
+                  checked
+                />
+                <label class="form-check-label" for="Horoscope-no">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Marital Status</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Have Childre</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Height</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Wight</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class=" col-9">
+            <label class=" label">Linkedin Profile Url</label>
+            <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://www.linkedin.com/in/YourID">
+          </div>
+          <div class=" col-3">
+            <label  class=" label">Connection count</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>100</option>
+                <option value="1">200</option>
+                <option value="2">300</option>
+                <option value="3">500+</option>
+              </select>
+          </div>
+          <div class=" col-12">
+            <label  class=" label">Use Comma (,) to seprate value</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hobbies">
+          </div>
+          <div class="col-12 nav-btn d-flex justify-content-start float-end">
+            <button type="button" id="p-form1" class="btn bg-blue text-white">Prev</button>
+            <button type="button" id="n-form3" class="btn bg-blue text-white ms-3">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- form-2 -->
+      <!-- form 3 -->
+      <div id="form-3">
+      <div  class="row align-items-end g-3 mt-3">
+        <div class="col-4">
+          <select name="country" id="" class="form-select">
+            <option value="" selected disabled>Country</option>
+            <option value="">India</option>
+            <option value="">Sri Lanka</option>
+            <option value="">USA</option>
+            <option value="">Russia</option>
+            <option value="">Singapor</option>
+            <option value="">Japan</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <select name="country" id="" class="form-select">
+            <option value="" selected disabled>State</option>
+            <option value="">Maharashtra</option>
+            <option value="">UP</option>
+            <option value="">MP</option>
+            <option value="">Delhi</option>
+            <option value="">Chennai</option>
+            <option value="">Gujarat</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <select name="country" id="" class="form-select">
+            <option value="" selected disabled>City</option>
+            <option value="">Mumbai</option>
+            <option value="">Napgpur</option>
+            <option value="">Mira road</option>
+            <option value="">Navi Mumbai</option>
+            <option value="">Pune</option>
+            <option value="">Solapur</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <label for="" class="label">PinCode</label>
+          <input type="number" maxlength="6" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </div>
+        <div class="col-9">
+          <label for="" class="label">Residentail Status (If Out of India)</label>
+          <input type="text"  class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="exampleFormControlTextarea1" class="label">Correspondence Address</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-6">
+          <label for="exampleFormControlTextarea1" class="label">Permanent Address</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-4">
+          <select name="" id="" class="form-select">
+            <option value="" selected disabled>Degree</option>
+            <option value="">Phd</option>
+            <option value="">Post Graduation</option>
+            <option value="">Graduation</option>
+            <option value="">12th Pass</option>
+            <option value="">10th Pass</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <select name="" id="" class="form-select">
+            <option value="" selected disabled>Occupation</option>
+            <option value="">Sotware developer</option>
+            <option value="">Media</option>
+            <option value="">Goverment Job</option>
+            <option value="">Accountant</option>
+            <option value="">Graphic Designer</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <select name="" id="" class="form-select">
+            <option value="" selected disabled>Designation</option>
+            <option value="">Fullstack Dev</option>
+            <option value="">Cloud Eng</option>
+            <option value="">fontend Dev</option>
+            <option value="">Backend Dev</option>
+            <option value="">Ux/Ui</option>
+          </select>
+        </div>
+        <div class="col-8">
+          <label for="" class="label">Employeed in</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-4">
+          <select name="" id="" class="form-select">
+            <option value="" selected disabled>Annual Income</option>
+            <option value="">lessthan 150k</option>
+            <option value="">200k</option>
+            <option value="">400k</option>
+            <option value="">800k</option>
+            <option value="">morethan 1M</option>
+          </select>
+        </div>
+        <div class="nav-btn col-12 d-flex justify-content-start float-end">
+          <button type="button" id="p-form2" class="btn bg-blue text-white">Prev</button>
+          <button type="button" id="n-form4" class="btn bg-blue text-white ms-3">Next</button>
+        </div>
+    </div>
+  </div>
+    <!-- form 3 -->
+    <!-- form 4 -->
+    <div id="form-4">
+    <div  class="row align-items-end g-3 mt-3">
+      <div class="col-4">
+        <select name="" id="" class="form-select">
+          <option value="" selected disabled>Family Type</option>
+          <option value="">Nuclear family</option>
+          <option value="">Extended family</option>
+          <option value="">Reconstituted family</option>
+          <option value="">Single parent family</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <input type="text" class="form-control" placeholder="Mother Name">
+      </div>
+      <div class="col-4">
+        <input type="text" class="form-control" placeholder="Mother Occupation">
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control" placeholder="Father Name">
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control" placeholder="Father Occupation">
+      </div>
+      <div class="col-3">
+        <label class="label">Brothers</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option value="" selected disabled>Brothers</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label class="label">Brothers Married</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option value="" selected disabled>Maried</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+
+      <div class="col-3">
+        <label class="label">Sisters</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option value="" selected disabled>Sisters</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label class="label">Sisters Married</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option value="" selected disabled>Maried</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <label class="label">Family Living in</label>
+        <input type="text" class="form-control" name="" id="">
+      </div>
+      <div class="col-6">
+        <label class="label">Native City</label>
+        <input type="text" class="form-control" name="" id="">
+      </div>
+      <div class="col-6">
+        <label for="exampleFormControlTextarea1" class="label">About Yourself</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-6">
+        <label for="exampleFormControlTextarea1" class="label">About Family</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12 nav-btn d-flex justify-content-start float-end">
+        <button type="button" id="p-form3" class="btn bg-blue text-white">Prev</button>
+        <button type="submit" class="btn bg-pink text-white ms-3">Submit</button>
+      </div>
+    </div>
+  </div>
+    <!-- form 4 -->
+  </div>
+  </body>
+  <script></script>
+  <!-- jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <!-- custom js -->
+  <script src="./js/register.js"></script>
+</html>

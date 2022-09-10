@@ -13,6 +13,10 @@
     top: 0;
     left: 0;
 }
+.main-card{
+    height: 38rem; 
+    z-index: 100
+}
 .logo{
     height: 5rem;
 }
@@ -55,7 +59,7 @@ input[type=number]::-webkit-outer-spin-button {
   @media only screen and (min-width: 400px) {
     .register{
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 5rem;
 }
   }
 @media only screen and (min-width: 800px) {

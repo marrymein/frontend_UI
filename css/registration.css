@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg-img {
+  background-position: center center !important;
+  background-size: cover !important;
+  position: fixed;
+  /* max-height: 100% !important;
+  max-width: 100% !important; */
+  opacity: 10%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.logo {
+  height: 5rem;
+}
+.main-card {
+  height: 40rem !important;
+}
+.nav-card {
+  background: linear-gradient(180.02deg, #ff8fc6 10.37%, #00a3ff 99.98%);
+  position: relative;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  opacity: 50% !important;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.nav-links:hover {
+  opacity: 90% !important;
+  color: white;
+}
+.active {
+  opacity: 100% !important;
+}
+.social-icons {
+  position: absolute;
+  bottom: 0.5rem;
+}
+.social-icons a {
+  width: 3rem !important;
+  height: 3rem !important;
+  color: #9bdaff;
+}
+.social-icons a:hover {
+  color: white;
+}
+.label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #e4177c;
+}
+.effect-2 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.effect-2:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+#form-2,
+#form-3,
+#form-4 {
+  display: none;
+}
+
+#form-1,
+#form-2,
+#form-3,
+#form-4{
+  position: relative;
+  width: 100%;
+  height: 24rem;
+}
+.nav-btn{
+  position: absolute !important;
+  bottom: -6rem !important;
+}
+
+
+
+
+/* --------- */
+.custom-inp:focus{
+  border: 0 5px 0 0 #00a3ff solid !important;
+  border-radius: 7px !important;
+}
+
+input[type="radio"]:focus {
+  box-shadow: none !important;
+  border: 0;
+}
+textarea:focus {
+  box-shadow: none !important;
+  border: 2px #00a3ff solid !important;
+  padding: 5px;
+  margin: 0;
+}
+input:focus {
+  box-shadow: none !important;
+  border: 2px #00a3ff solid !important;
+  padding: 5px;
+  margin: 0;
+}
+select:focus {
+  box-shadow: none !important;
+  border: 2px #00a3ff solid !important;
+  padding: 5px;
+  margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0;
+}
