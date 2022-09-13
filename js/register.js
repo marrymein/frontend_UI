@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
     // click by next and prev btn
 
 //---------------- next btn 
@@ -110,6 +113,32 @@ $('#family-bg').click(function(){
     $('#personal').removeClass('active')
     $('#residential').removeClass('active')
     $('#family-bg').addClass('active')
+})
+$('#n-form2').click(function(){
+    $('#form-1').validate({
+        rules:{
+            name:{
+                required:true
+            },
+            gender:{
+                required:true
+            },
+            phone_number:{
+                required:true,
+                minlength:10,
+            },
+            email:{
+                required:true
+            },
+            password:{
+                required:true,
+                minlength:8
+            },
+        }
+    });
+    if($('#form-1').valid()==true){
+        
+    }
 })
 
 

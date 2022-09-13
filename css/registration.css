@@ -6,8 +6,6 @@
   background-position: center center !important;
   background-size: cover !important;
   position: fixed;
-  /* max-height: 100% !important;
-  max-width: 100% !important; */
   opacity: 10%;
   z-index: -1;
   top: 0;
@@ -16,16 +14,13 @@
 .logo {
   height: 5rem;
 }
-.main-card {
-  height: 40rem !important;
-}
 .nav-card {
   background: linear-gradient(180.02deg, #ff8fc6 10.37%, #00a3ff 99.98%);
   position: relative;
 }
 .nav-links {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   opacity: 50% !important;
   color: white;
@@ -52,25 +47,15 @@
 }
 .label {
   font-size: 0.8rem;
-  font-weight: bold;
-  color: #e4177c;
+  font-weight: 500;
+  color: #5d5d5d;
 }
-.effect-2 ~ .focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #3399ff;
-  transition: 0.4s;
+.mandatory{
+  font-size: large;
+  color: rgb(253, 69, 69);
 }
-.effect-2:focus ~ .focus-border {
-  width: 100%;
-  transition: 0.4s;
-  left: 0;
-}
+#form-1,
 #form-2,
-#form-3,
 #form-4 {
   display: none;
 }
@@ -85,12 +70,8 @@
 }
 .nav-btn{
   position: absolute !important;
-  bottom: -6rem !important;
+  bottom: -7.5rem !important;
 }
-
-
-
-
 /* --------- */
 .custom-inp:focus{
   border: 0 5px 0 0 #00a3ff solid !important;
@@ -100,6 +81,7 @@
 input[type="radio"]:focus {
   box-shadow: none !important;
   border: 0;
+  padding: 0 !important;
 }
 textarea:focus {
   box-shadow: none !important;
@@ -123,3 +105,118 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 0;
 }
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .nav-btn{
+    bottom: 1rem !important;
+  }
+  #form-1{
+    height: 33rem;
+  }
+#form-2,
+#form-3,
+#form-4{
+  height: auto !important;
+}
+#form-1 > div:first-child,
+#form-2 > div:first-child,
+#form-3 > div:first-child,
+#form-4 > div:first-child
+{
+  padding-bottom: 5rem !important;
+}
+
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+#form-1,
+#form-2,
+#form-3,
+#form-4{
+  height: auto !important;
+}
+#form-1 > div:first-child,
+#form-2 > div:first-child,
+#form-3 > div:first-child,
+#form-4 > div:first-child
+{
+  padding-bottom: 5rem !important;
+}
+.nav-btn{
+  position: absolute !important;
+  bottom: 0rem !important;
+}
+
+.main-card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 2rem !important;
+  margin-bottom: 2rem;
+}
+.form-card{
+  border-radius: 2rem !important;
+}
+}
+
+/* landscape tablet and small laptops */
+@media only screen and (min-width: 770px) {
+#form-1,
+#form-2,
+#form-3,
+#form-4{
+  height: 100% !important;
+}
+.nav-btn{
+  bottom: 6rem !important;
+}
+
+#form-1 > div:first-child,
+#form-2 > div:first-child,
+#form-3 > div:first-child,
+#form-4 > div:first-child
+{
+  padding-bottom: 5rem !important;
+}
+.main-card{
+  box-shadow: 0;
+  border-radius:2rem !important;
+}
+}
+
+/* midum laptops */
+@media only screen and (min-width: 992px) {
+  .nav-links{
+    font-size: 2rem;
+  }
+  .form-card{
+  height:100vh;
+}
+.nav-btn{
+  bottom: 2rem !important;
+}
+.main-card{
+  border-radius: 0 !important;
+}
+}
+
+/* Disktops */
+@media only screen and (min-width: 1300px) {
+  .nav-card{
+    border-radius: 2rem !important;
+  }
+  .form-card{
+    height: auto ;
+  }
+  #form-1,
+  #form-2,
+  #form-3,
+  #form-4{
+    height: 33rem !important;
+  }
+  .main-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem !important;
+  }
+}
+
+
