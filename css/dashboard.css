@@ -1,0 +1,138 @@
+.match-badge{
+    top: -0.7rem;
+    right: -0.7rem;
+}
+
+
+.profile-card{
+    background: linear-gradient(151.91deg, #00A3FF 0%, #002C45 99.42%);
+}
+.profile{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-bg{
+    background: linear-gradient(#ffffff92,#ffffff), url('../asserts/bg-patter2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.messages{
+    width: 3rem;
+    height: 3rem;
+}
+.message-pin{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;right: 0;
+}
+
+/*  */
+.progress-bar svg {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    transform: rotate(-90deg);
+  }
+  
+  .progress-bar svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+  
+  .progress-bar svg circle:last-of-type {
+    stroke-dasharray: 250px;
+    stroke-dashoffset: calc(250px - (250px * var(--percent)) / 100);
+    stroke: #3498db; 
+  }
+  .percent{
+    position: absolute;
+    left: 30%;
+  }
+  /*  */
+.profile-settings li{
+    text-decoration: none;
+    list-style: none;
+}
+/* ------------------dashboard-------------------------- */
+.avatar{
+    width: 7rem !important;
+    height: 7rem !important;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -1.5rem;
+    border: 3px white solid;
+}
+.avatars img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*  */
+.profiles .profile-img{
+    width: 15rem;
+    height: 15rem;
+}
+.profiles .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiles{
+    width: 17rem;
+    padding: 1rem;
+}
+.verify-batch{
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 425px){
+	.avatar{
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+    .mini-profile-img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .mini-profile-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -40,3 +40,9 @@ h1,h2,h3,h4,h5,h6,p,span{
 .display-font{
     font-family: 'Felix Titling', sans-serif !important;
 }
+.text-xs{
+    font-size: 0.8rem;
+}
+.logo{
+    height: 4.5rem;
+}

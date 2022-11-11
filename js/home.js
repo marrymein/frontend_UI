@@ -28,6 +28,28 @@ $owl.owlCarousel({
     }
 }
 });
+$('.second').owlCarousel({
+    center: true,
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+      0:{
+          items:1,
+  
+      },
+      600:{
+          items:2,
+  
+      },
+      1000:{
+          items:4,
+      }
+  }
+  });
 
 $(document).on('click', '.owl-item>div', function() {
   // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
